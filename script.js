@@ -36,10 +36,10 @@ const PROJECTS = [
   {
     title: 'Predictive Maintenance – Machine Failure Prediction',
     kind: 'Failure prediction from machine sensor data',
-    metric: '99.1% AUC',
+    metric: '0.977 ROC-AUC',
     lens: ['research', 'analytics'],
     what: 'Predicts machine failure from sensor readings. Compares six model families, with SMOTE for class balance and a tuned Random Forest.',
-    how: 'Random Forest and XGBoost compared on the same engineered features.',
+    how: 'Evaluated on held-out real readings only, with SMOTE applied to the training split, so the score is not inflated by synthetic test rows.',
     tags: ['scikit-learn', 'XGBoost', 'SMOTE', 'Random Forest'],
     links: [['Code', GH + 'Machine-Failure-Prediction']],
   },
