@@ -16,7 +16,7 @@ const PROJECTS = [
   {
     title: 'Pneumonia Detection from Chest X-Rays',
     kind: 'Diagnostic CNN with uncertainty and explanations',
-    metric: '80.77% accuracy',
+    metric: '88.1% accuracy',
     lens: ['research'],
     what: 'Transfer learning on DenseNet121 for pneumonia detection, with Monte Carlo Dropout to estimate how sure each prediction is and Grad-CAM to show which regions of the X-ray drove it.',
     how: 'Built to answer two questions a clinician would ask: how confident is this, and what is it looking at.',
